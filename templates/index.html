@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ramya Thippineni | Portfolio</title>
+
+    <link rel="stylesheet"
+      href="{{ url_for('static', path='css/style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Thippineni Ramya<span>.</span></a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>Hi, I'm <span>Ramya Thippineni</span></h1>
+
+            <h2>Python Developer | Data Science Graduate</h2>
+
+            <p>
+                Aspiring Python Developer passionate about building web applications and backend solutions. Skilled in Python, SQL, FastAPI, HTML, and CSS, with an interest in REST API development, database management, and problem-solving. Always eager to learn new technologies and transform ideas into practical applications.
+
+            </p>
+
+            <div class="home-buttons">
+                <a href="#projects" class="btn">View Projects</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/ThippineniRamya"
+                   target="_blank">GitHub</a>
+
+                <a href="https://linkedin.com/in/ramya-thippineni"
+                   target="_blank">LinkedIn</a>
+            </div>
+
+        </div>
+    <div class="home-image">
+    <div class="image-circle">
+        <img src="{{ url_for('static', path='images/ramya.jpg') }}"
+             alt="Ramya Thippineni">
+    </div>
+</div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+
+        <h2 class="section-title">About Me</h2>
+
+        <p class="section-subtitle">
+            Get to know more about me
+        </p>
+
+        <div class="about-content">
+
+            <h3>Career Objective</h3>
+
+            <p>
+                To utilize my technical knowledge and problem-solving
+                abilities to contribute effectively to organizational
+                goals. Seeking opportunities to enhance my skills
+                through real-world projects, continuous learning,
+                and challenging tasks. To grow professionally while
+                contributing to the success and development of
+                the organization.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+
+        <h2 class="section-title">My Technical Skills</h2>
+
+        <p class="section-subtitle">
+            Technologies and tools I have learned
+        </p>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python</p>
+                <p>SQL</p>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Frontend</h3>
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>React.js</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Backend & Database</h3>
+                <p>Fast APIs</p>
+                <p>MySQL</p>
+                <p>PDBC</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Generative AI</h3>
+                <p>LLMs</p>
+                <p>RAG</p>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools</h3>
+                <p>VS Code</p>
+                <p>Git</p>
+                <p>GitHub</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+
+        <h2 class="section-title">Education</h2>
+
+        <p class="section-subtitle">
+            My academic background
+        </p>
+
+        <div class="education-container">
+
+            <div class="education-card">
+                <h3>Bachelor of Technology</h3>
+                <h4>Narasaraopeta Engineering College</h4>
+                <p>Data Science</p>
+                <span>2026</span>
+            </div>
+
+            <div class="education-card">
+                <h3>Intermediate</h3>
+                <h4>Umamaheswara Junior College, Ongole</h4>
+                <span>2022</span>
+            </div>
+
+            <div class="education-card">
+                <h3>SSC</h3>
+                <h4>Sri Sai Vidhyanikethan, Ammanabrolu</h4>
+                <span>2020</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+
+        <h2 class="section-title">My Projects</h2>
+
+        <p class="section-subtitle">
+            Some projects I have developed
+        </p>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>Hospital Appointment System</h3>
+
+                <p>
+                    Developed a console-based Hospital Appointment
+                    Management System using Python and MySQL.
+                    Implemented doctor, patient and appointment
+                    management with booking, searching, viewing
+                    and cancellation functionalities.
+                </p>
+
+                <div class="project-tech">
+                    Python | MySQL | PDBC | SQL
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Restaurant Ordering System</h3>
+
+                <p>
+                    Developed a console-based restaurant ordering
+                    system with customer management, menu-based
+                    food ordering and quantity selection.
+                    Implemented database operations and automatic
+                    bill generation with item-wise totals.
+                </p>
+
+                <div class="project-tech">
+                    Python | MySQL | PDBC
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>LearnMate – Virtual Tutoring Platform</h3>
+
+                <p>
+                    Developed a MERN-based virtual tutoring and
+                    study platform connecting students with tutors.
+                    Implemented authentication, role-based access,
+                    session booking, resource sharing and chat
+                    functionality.
+                </p>
+
+                <div class="project-tech">
+                    React.js | Node.js | Express.js | MongoDB
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Activities Section -->
+    <section class="activities section" id="activities">
+
+        <h2 class="section-title">Achievements</h2>
+
+        <div class="activity-card">
+
+            <h3>Smart India Hackathon – 2023</h3>
+
+            <p>
+                Participated in the College-Level Smart India
+                Hackathon (SIH 2023) and worked as a team on
+                LearnMate – Virtual Tutoring and Study Platform.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications section" id="certifications">
+
+        <h2 class="section-title">Certifications</h2>
+
+        <div class="certification-container">
+
+            <div class="certification-card">
+                Python & MySQL – Innomatics
+            </div>
+
+            <div class="certification-card">
+                The Joy of Computing using Python – NPTEL (2023)
+            </div>
+
+            <div class="certification-card">
+                Web Development Fundamentals – IBM SkillsBuild (2025)
+            </div>
+
+            <div class="certification-card">
+                Introduction to Generative AI
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p class="section-subtitle">
+            Let's connect and discuss opportunities
+        </p>
+
+        <div class="contact-container">
+
+            <div class="contact-card">
+                <h3>Email</h3>
+                <a href="mailto:thippineniramya@gmail.com">
+                    thippineniramya@gmail.com
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <a href="tel:+917601091399">
+                    +91 7601091399
+                </a>
+            </div>
+
+            <div class="contact-card">
+                <h3>Location</h3>
+                <p>Hyderabad, Telangana</p>
+            </div>
+
+            <div class="contact-card">
+                <h3>GitHub</h3>
+                <a href="https://github.com/ThippineniRamya"
+                   target="_blank">Visit GitHub</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Ramya Thippineni. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
